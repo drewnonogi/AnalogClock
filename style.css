@@ -1,0 +1,57 @@
+html{
+  min-height: 100vh;
+  background:linear-gradient(#909090,#727272)
+}
+
+.clock {
+  margin: 100px auto;
+  background: linear-gradient(#4574db,#14a8ad);
+  width: 200px;
+  height: 200px;
+  border: 16px solid purple;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hand,
+#dot {
+  position: absolute;
+  transform-origin: 100%;
+}
+.hand{
+  transition: all 0.05s cubic-bezier(1,2.5,.85,1.2);
+}
+
+#dot {
+  background-color: black;
+  border-radius: 50%;
+  width: 8%;
+  height: 8%;
+  top: 46%;
+  left: 46%;
+}
+
+#hourHand {
+  background-color: black;
+  width: 25%;
+  height: 5%;
+  left: 25%;
+  top:47.5%
+}
+
+#minuteHand {
+  background-color: rgb(0, 0, 114);
+  width: 33%;
+  height: 3%;
+  left: 17%;
+  top:48.5%
+
+}
+
+#secondsHand {
+  width: 48%;
+  height: 2%;
+  background-color: rgb(250, 0, 0);
+  left: 2%;
+  top:49%
+}
